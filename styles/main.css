@@ -1,29 +1,27 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
     --primary-bg: #282828;
     --secondary-bg: #3C3836;
     --button-bg: #665C54;
-    --primary-fg: #EBDBB2;
-    --tertiary-bg: #FBF1C7;
+    --primary-fg: #FBF1C7;
+    --secondary-fg: #EBDBB2;
+    --tertiary-fg: #D5C4A1;
 }
 
 .main-container {
     display: flex;
-
-    /* justify-content: center; */
 }
 
 .profile-container {
     background-color: var(--primary-bg);
     color: var(--primary-fg);
-    /* text-align: center; */
-    /* padding: 20px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 30vw;
     height: 100vh;
 }
@@ -31,16 +29,65 @@ body {
 .portfolio-container {
     background-color: var(--secondary-bg);
     color: var(--primary-fg);
-    text-align: center;
-    /* padding: 20px; */
     width: 70vw;
     height: 100vh;
 }
 
-#avatar {
+.profile-container img {
     border-radius: 50%;
-    height: 35vh;
+    width: 18vw;
     padding-top: 10vh;
-    padding-bottom: 10vh;
-    align-self: center;
+    padding-bottom: 5vh;
+}
+
+.profile-content {
+    /* margin: 0vw 8vw 0vw 8vw; */
+    max-width: 16vw;
+
+}
+
+.profile-content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px 0px 12px 0px;
+    color: var(--secondary-fg);
+}
+
+.profile-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0px 0px 6px 0px;
+    color: var(--tertiary-fg);
+
+}
+
+.profile-content p {
+    /* max-width: 200px; */
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.profile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+}
+
+.profile-footer button {
+    background-color: var(--button-bg);
+    color: var(--secondary-fg);
+    padding: 20px 40px 20px 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.profile-footer button:hover {
+    box-shadow: 0px 0px 30px black;
+    cursor: pointer;
+    color: var(--primary-fg);
 }
